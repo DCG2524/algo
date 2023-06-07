@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		/* CSS modifications */
+		.broker-list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 20px;
+			padding: 0;
+			list-style: none;
+		}
+	
+		.broker-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	
+		.broker-item .logo {
+			width: 200px;
+			height: 200px;
+			margin-bottom: 20px;
+		}
+	
+		.broker-item .connect-btn {
+			background-color: #1e90ff;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 14px;
+		}
+	
+		.broker-item .connect-btn:hover {
+			background-color: #1c7ed6;
+		}
+	</style>
+
+	<title>ALGOshift</title>
+</head>
+<body>
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="index.html" class="brand">
+			<i class='bx bx-line-chart'></i>
+			<span class="text">ALGOshift</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="index.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="brokers.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Brokers</span>
+				</a>
+			</li>
+			<li>
+				<a href="portfolio.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Portfolio</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-bulb'></i>
+					<span class="text">Strategy</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-chart' ></i>
+					<span class="text">Chart</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="login.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZhoF76o9Tz2M1UynYnEl8203DGbK_isGM4A&usqp=CAU">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Brokers</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Brokers</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Enter the content here -->
+			<ul class="broker-list">
+				<li class="broker-item">
+					<img src="https://pbs.twimg.com/profile_images/1473526533264326656/Eg4leO89_400x400.jpg" alt="Fyers" class="logo">
+					<button class="connect-btn">Connect</button>
+				</li>
+				<li class="broker-item">
+					<img src="https://www.selectyourdeals.com/wp-content/uploads/2020/05/kite-zerodha-crosses-one-million-download-playstore.png" alt="Zerodha" class="logo">
+					<button class="connect-btn">Connect</button>
+				</li>
+				<li class="broker-item">
+					<img src="https://udaipurkiran.com/wp-content/uploads/2022/12/Angel-One.png" alt="Angel One" class="logo">
+					<button class="connect-btn">Connect</button>
+				</li>
+				<li class="broker-item">
+					<img src="https://upstox.com/app/uploads/2021/09/featured-img-copy2-450x265.gif" alt="Upstox" class="logo">
+					<button class="connect-btn">Connect</button>
+				</li>
+				<li class="broker-item">
+					<img src="https://mir-s3-cdn-cf.behance.net/projects/404/e83c1f141884627.Y3JvcCwxOTI3LDE1MDcsMTI3OCw0MTU.png" alt="Grow" class="logo">
+					<button class="connect-btn">Connect</button>
+				</li>
+			</ul>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+	<script src="script.js"></script>
+</body>
+</html>
